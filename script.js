@@ -18,11 +18,3 @@ tabList.addEventListener('click', (event) => {
         targetPane.classList.add('active');
     }
 });
-
-// Добавить обработчик для переключателя тем
-const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('change', () => {
-    document.body.classList.toggle('dark-theme');
-    // Добавьте классы dark-theme к элементам вкладок, если нужно
-    tabList.classList.toggle('dark-theme');
-});
