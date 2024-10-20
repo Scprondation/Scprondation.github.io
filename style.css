@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Светлый фон */
+    color: #333; /* Темный текст */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Плавный переход цветов */
+}
+
+header {
+    background-color: #333; /* Темный фон шапки */
+    color: #fff; /* Белый текст */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.app-categories ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-categories li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.app-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.app-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.app-card button {
+    background-color: #007bff; /* Синий цвет кнопки */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.theme-switch {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.theme-switch input[type="checkbox"] {
+    display: none;
+}
+
+.theme-switch label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-switch input[type="checkbox"]:checked + label {
+    background-color: #007bff; /* Синий цвет при включении тёмной темы */
+    color: #fff;
+}
+
+.dark-theme {
+    background-color: #222; /* Темный фон для тёмной темы */
+    color: #eee; /* Светлый текст для тёмной темы */
+}
+
+.dark-theme .app-categories li {
+    background-color: #333;
+    color: #eee;
+}
+
+.dark-theme .app-card {
+    background-color: #333;
+    color: #eee;
+}
