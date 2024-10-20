@@ -1,64 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charSet="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="application-name" content="FruitSpace" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta name="apple-mobile-web-app-title" content="FruitSpace" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#191925" />
-    
-    <title>главная страница</title>
-    <style>
-        
-        @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic); 
-        
-         body{
-  font-family: 'Rubik One', sans-serif;
-  font-size: 7vw;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin: 10px auto
-  text-align: center;
-  background-color: #202020;
-    
-  }
-
-
-     
-    a.text {
-  text-decoration: none;
-  color: #ffffff;
-} 
-
-
-
-div{ 
-  width: 98%;
-  height: 35%;
-  border-radius: 15px;
-  background-color: #090912b2;
-  margin: auto;  
-  border: 3px solid black;
-  border-color: #ff5e00a3;  
-  text-align: center;
-}
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин приложений</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="#202020">
-   
-    <marquee direction="right">
-        скачивай бактерии онлайн 2?<svg width="100%" height="1"></svg>скачивай GDPS Scp 2
-        </marquee> 
-        
-      <div>  
-        <p><a href="Scp2" class="text" >gdps scp 2</a></p>
-        
-        <p><a href="bk" class="text" >Iбактерии онлайнI</a></p>
+<body>
+    <header>
+        <h1>Магазин приложений</h1>
+        <div class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <label for="theme-toggle">Темная тема</label>
         </div>
+    </header>
+
+    <main>
+        <section class="app-categories">
+            <h2>Категории</h2>
+            <ul>
+                <li>Игры</li>
+                <li>Утилиты</li>
+                <li>Социальные сети</li>
+                <li>Образование</li>
+                <li>Музыка</li>
+            </ul>
+        </section>
+
+        <section class="featured-apps">
+            <h2>Популярные приложения</h2>
+            <div class="app-grid">
+                <div class="app-card">
+                    <img src="images/app1.jpg" alt="Приложение 1">
+                    <h3>Название приложения 1</h3>
+                    <p>Описание приложения 1</p>
+                    <button>Установить</button>
+                </div>
+                <div class="app-card">
+                    <img src="images/app2.jpg" alt="Приложение 2">
+                    <h3>Название приложения 2</h3>
+                    <p>Описание приложения 2</p>
+                    <button>Установить</button>
+                </div>
+                <div class="app-card">
+                    <img src="images/app3.jpg" alt="Приложение 3">
+                    <h3>Название приложения 3</h3>
+                    <p>Описание приложения 3</p>
+                    <button>Установить</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Магазин приложений</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
