@@ -2,8 +2,8 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Светлый фон */
-    color: #333; /* Темный текст */
+    background-color: #222; /* Темный фон */
+    color: #eee; /* Светлый текст */
     transition: background-color 0.5s ease, color 0.5s ease; /* Плавный переход цветов */
 }
 
@@ -33,7 +33,8 @@ section {
 .app-categories li {
     margin: 10px;
     padding: 10px;
-    background-color: #eee;
+    background-color: #333; /* Темный фон */
+    color: #eee; /* Светлый текст */
     border-radius: 5px;
     cursor: pointer;
 }
@@ -45,7 +46,8 @@ section {
 }
 
 .app-card {
-    background-color: #fff;
+    background-color: #333; /* Темный фон */
+    color: #eee; /* Светлый текст */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -76,8 +78,7 @@ footer {
 }
 
 .theme-switch {
-    display: inline-block;
-    margin-left: 20px;
+    display: none; /* Скрываем переключатель */
 }
 
 .theme-switch input[type="checkbox"] {
@@ -95,19 +96,4 @@ footer {
 .theme-switch input[type="checkbox"]:checked + label {
     background-color: #007bff; /* Синий цвет при включении тёмной темы */
     color: #fff;
-}
-
-.dark-theme {
-    background-color: #222; /* Темный фон для тёмной темы */
-    color: #eee; /* Светлый текст для тёмной темы */
-}
-
-.dark-theme .app-categories li {
-    background-color: #333;
-    color: #eee;
-}
-
-.dark-theme .app-card {
-    background-color: #333;
-    color: #eee;
 }
